@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add images to a slider.</title>
+</head>
+
+<body>
+    <!--Slide Show-->
+    <section>
+        <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvNdYf_0nyK0BAi4yF_icoWjYs4AXZeid1Kw&s" style="height:400px;">
+        <img class="mySlides" src="https://www.google.com/imgres?q=png%20image%20of%20stephen%20curry&imgurl=https%3A%2F%2Fwww.kindpng.com%2Fpicc%2Fm%2F171-1712176_steph-transparent-by-freddieof-stephen-curry-png-png.png&imgrefurl=https%3A%2F%2Fwww.kindpng.com%2Fimgv%2FiiiJwxT_steph-transparent-by-freddieof-stephen-curry-png-png%2F&docid=lesWQJycXFdCYM&tbnid=U7HaFqHyER04SM&vet=12ahUKEwizteDUtNeJAxUFT0EAHVr5BA0QM3oECGkQAA..i&w=860&h=645&hcb=2&ved=2ahUKEwizteDUtNeJAxUFT0EAHVr5BA0QM3oECGkQAA" style="height:400px;">
+        <img class="mySlides" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.footyrenders.com%2Fla-liga%2Freal-madrid%2Fcristiano-ronaldo-255%2F&psig=AOvVaw1LMnyo0sWev0sAY9BmUb9G&ust=1731522283580000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiWmcW114kDFQAAAAAdAAAAABAE"
+            style="height:400px;">
+    </section>
+    <script>
+        // Automatic SlideShow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+</body>
+
+</html>
